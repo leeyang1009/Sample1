@@ -5,12 +5,12 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0, 0, 0, 0
-
+  margin: 0;
 }
 
 /* HOME */
 .home-container {
+  margin: 0;
   padding: 2rem;
   position: relative;
   background-size: cover;
@@ -25,9 +25,8 @@ body {
   );
   min-height: 700px;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
-  
 }
 .nav-container {
   position: relative;
@@ -113,11 +112,6 @@ body {
     margin-top: 2rem;
   }
 
-  .nav-container ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
   .nav-container li {
     display: flex;
     justify-content: right;
@@ -134,7 +128,13 @@ body {
     font-size: 1rem;
   }
 }
-
+@media (max-width: 810px) {
+  .nav-container ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
 /* ABOUT */
 
 .about-container {
@@ -295,31 +295,23 @@ body {
   .testimonial h2 {
     font-size: 8px;
     line-height: 1.5;
-  } 
-  .testimonials-container{
-   grid-template-columns: repeat(3, 1fr);
-   }
+  }
+  .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .testimonial:nth-child(1),
+  .testimonial:nth-child(3),
   .testimonial:nth-child(5) {
     display: none;
   }
 }
-  @media (max-width: 24rem) {
-    .testimonial:nth-child(3) {
-      display: none;
-    }
-    .testimonials-container{
-   grid-template-columns: repeat(2, 1fr);
-   }
-  }
-
+@media (max-width: 24rem) {
   .timage {
     height: 60px;
     width: 60px;
     border-radius: 50%;
   }
 }
-
 /* CONTACT*/
 #contact {
   width: 100vw;
@@ -397,8 +389,8 @@ body {
     font-size: 18px;
   }
 }
-@media(max-width: 24rem){
-     .contact-image {
+@media (max-width: 24rem) {
+  .contact-image {
     height: 7rem;
     width: 7rem;
   }
