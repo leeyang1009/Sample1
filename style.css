@@ -298,8 +298,8 @@ body {
 .testimonials-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  color: black;
-  background-color: rgb(240, 240, 240);
+  color: #222;
+  background-color: rgb(235, 235, 235);
   gap: 1rem;
   align-items: center;
   padding: 1rem;
@@ -323,10 +323,11 @@ body {
 }
 
 .testimonial {
-  border: 1px solid rgba(0, 0, 255, 0.4);
+  border: 1px solid #444;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ddd;
 }
 
 .testimonial em {
