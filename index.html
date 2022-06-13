@@ -15,14 +15,19 @@
   </head>
   <body>
     <section id="homepage">
+      <div class="scroll-animation"></div>
       <div class="home-container">
         <nav class="nav-container">
+          <div class="buttons">
+            <i class="button open fas fa-solid fa-lock-open"></i>
+            <i class="button close fas fa-solid fa-lock"></i>
+          </div>
           <img class="nav-image" src="logo.png" alt="logo" />
           <ul>
             <li><a href="#homepage">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#testimonials">TESTIMONIALS</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
 
@@ -42,7 +47,11 @@
     <section class="about" id="about">
       <div class="about-container">
         <div class="description-container">
-          <img class="about-image about1" src="img/about.png" alt="" />
+          <img
+            class="about-image about1 image-animation"
+            src="img/about.png"
+            alt=""
+          />
           <h1>Easy to use and Fast</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nam
@@ -50,7 +59,11 @@
           </p>
         </div>
         <div class="description-container">
-          <img class="about-image about2" src="img/about2.png" alt="" />
+          <img
+            class="about-image about2 image-animation"
+            src="img/about2.png"
+            alt=""
+          />
           <h1>Convenient and many features</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nam
@@ -58,7 +71,11 @@
           </p>
         </div>
         <div class="description-container">
-          <img class="about-image about3" src="img/about3.png" alt="" />
+          <img
+            class="about-image about3 image-animation"
+            src="img/about3.png"
+            alt=""
+          />
           <h1>Guaranteed good app</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nam
@@ -152,13 +169,17 @@
           </div>
         </div>
         <div class="contact-image-container">
-          <img class="contact-image" src="img/contact.png" alt="" />
+          <img
+            class="contact-image image-animation"
+            src="img/contact.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
     <footer class="footer">
       <h6>© Copyright 2022 The Smart Phone</h6>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
